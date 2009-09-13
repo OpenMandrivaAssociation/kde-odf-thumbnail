@@ -1,7 +1,6 @@
 %define	name	kde-odf-thumbnail
-%define	version	0.0.1
+%define	version	1.0.0
 %define	release	%mkrel 1
-%define	section	Graphical desktop/KDE
 %define	Summary	OpenOffice Thumbnail plugin for KDE
 
 
@@ -10,9 +9,11 @@ Name:		%name
 Version:	%version
 Release:	%release
 Source0:	http://arielch.fedorapeople.org/devel/src/OpenOfficeorgThumbnail-%{version}.tar.gz
-License:	GPLv3
-Group:		%section
+License:	LGPLv3
+Group:		Graphical desktop/KDE
 URL:		http://www.kde-look.org/content/show.php/OpenOffice.org+Thumbnail+plugin?content=110864
+# Patch to add some translations in the desktop file
+Patch0:		kde-odf-thumbnail-desktopfile.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	kdebase4-devel
 Provides:	kde-office-thumbnails = %{name}-%{version}
@@ -24,12 +25,13 @@ need to install OpenOffice.org for it to work (it only uses KDE API).
 
 %files 
 %defattr(-,root,root)
-%doc README
+%doc README LICENSE
 %{_kde_libdir}/kde4/openofficeorgthumbnail.so
 %{_kde_services}/openofficeorgthumbnail.desktop
 
 %prep
 %setup -q -n OpenOfficeorgThumbnail-%{version}
+%patch0
 
 %build
 %cmake_kde4
