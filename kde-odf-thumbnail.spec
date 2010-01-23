@@ -9,7 +9,7 @@ Name:		%name
 Version:	%version
 Release:	%release
 Source0:	http://kenai.com/projects/%{name}/downloads/download/%{version}/%{name}-%{version}.tar.gz
-License:	LGPLv2
+License:	LGPLv3
 Group:		Graphical desktop/KDE
 URL:		http://kde-apps.org/content/show.php?content=110864
 # Patch to add some translations in the desktop file
