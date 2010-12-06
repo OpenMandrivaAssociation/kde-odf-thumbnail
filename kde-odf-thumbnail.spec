@@ -1,6 +1,6 @@
 %define	name	kde-odf-thumbnail
 %define	version	1.0.0
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 %define	Summary	ODF Thumbnail plugin for KDE
 
 
