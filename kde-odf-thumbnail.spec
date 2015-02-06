@@ -1,7 +1,7 @@
 Summary:	Summary	ODF Thumbnail plugin for KDE
 Name:		kde-odf-thumbnail
 Version:	1.0.0
-Release:	5
+Release:	6
 Source0:	http://kenai.com/projects/%{name}/downloads/download/%{version}/%{name}-%{version}.tar.gz
 License:	LGPLv3
 Group:		Graphical desktop/KDE
