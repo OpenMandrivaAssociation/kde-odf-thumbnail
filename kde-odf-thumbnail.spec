@@ -5,7 +5,7 @@ Release:	6
 Source0:	http://kenai.com/projects/%{name}/downloads/download/%{version}/%{name}-%{version}.tar.gz
 License:	LGPLv3
 Group:		Graphical desktop/KDE
-URL:		http://kde-apps.org/content/show.php?content=110864
+URL:		https://kde-apps.org/content/show.php?content=110864
 # Patch to add some translations in the desktop file
 Patch0:		kde-odf-thumbnail-1.0.0-mdv-add-translation-in-desktopfile.patch
 BuildRequires:	kdebase4-devel
